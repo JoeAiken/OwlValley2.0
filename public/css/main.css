@@ -1,0 +1,134 @@
+html, body {
+
+	width: 100%;
+}
+
+.d-block {
+	width: 100%;
+	max-height: 650px;
+}
+
+
+#overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:50%;
+  left:0;
+  width:100%;
+  text-align:center;
+  font-family: 'Oxygen', sans-serif;
+  text-shadow: 2px 2px black;
+}
+/* navbar */
+.navbar-default {
+    background-color: white;
+    width: 100%;
+}
+
+
+#logo {
+
+	height: 80px;
+	width:250px;
+}
+
+
+#bottomText {
+	margin-left: 10%;
+}
+
+.navbar-nav{
+
+	text-align: right;
+}
+
+#hopPic {
+
+	max-width: 600px;
+	height: auto;
+	margin-top: 10%;
+}
+
+.textBox{
+	font-family: 'Oxygen', sans-serif;
+}
+
+#aboutUs {
+
+	margin-top: 13%;
+	width: auto;
+
+}
+
+#award {
+
+	margin-left: 25%;
+	margin-top: 2%;
+
+}
+
+#section2 {
+
+
+	background-image: url(../images/greenbackground.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	padding: 50px 0 50px 0;
+	margin-top: 5%;
+}
+
+#continueTitle {
+	 font-family: 'Oxygen', sans-serif;
+	 text-shadow: 2px 2px 2px black;
+}
+
+.card {
+	
+	width: 100%;
+	max-height: auto;
+	margin-left: 33%;
+}
+
+.card img{
+	max-height: 200px;
+}
+
+#continueTitle {
+	color: white;
+	margin-left: 10%;
+	margin-top: 5%;
+	padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+
+	#hopPic, #award {
+		width: 300px;
+	}
+
+	.d-block {
+		height: 400px;
+	}
+
+	#mainTitle {
+		font-size: 35px;
+
+	}
+	
+	#logo {
+
+		width: 150px;
+		height: 100px;
+	}
+
+	.textBox {
+		font-size: 30px;
+	}
+
+	#bottomText {
+		margin-left: 0;
+	}
+
+}
