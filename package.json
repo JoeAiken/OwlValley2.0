@@ -1,0 +1,26 @@
+{
+  "name": "owlvalley",
+  "version": "1.0.0",
+  "description": "owl valley SPA",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeAiken/OwlValley2.0.git"
+  },
+  "author": "Joe Aiken",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeAiken/OwlValley2.0/issues"
+  },
+  "homepage": "https://github.com/JoeAiken/OwlValley2.0#readme"
+}
