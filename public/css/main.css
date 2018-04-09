@@ -28,6 +28,11 @@ html, body {
     width: 100%;
 }
 
+.clickable {
+
+	cursor: pointer;
+}
+
 
 .logo {
 
@@ -199,7 +204,7 @@ footer {
     color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
 	#hopPic, #award {
 		width: 300px;
@@ -240,10 +245,28 @@ footer {
 		margin-left: 0;
 	}
 
-	.card {
-		margin-left: 0;
-		width: 90%;
+	#carousel2 {
 
+		width: 320px;
+		height: auto;
+	}
+
+	.card {
+		margin-left: 0%;
+
+	}
+
+	.card img {
+
+    	width: 70%;
+	}
+
+	.card-text {
+
+		width: 70%;
+		padding-right: 15px;
+		padding-left: 15px;
+		padding-bottom: 20px;
 	}
 	
 	#owlInfo {
