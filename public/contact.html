@@ -11,12 +11,14 @@
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	  <!-- Bootstrap CSS -->
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<!--jQuery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
+	
 	 <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono|family=Lato" rel="stylesheet">
       <!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	
 	
 </head>
 <body>
@@ -73,7 +75,7 @@
     					<textarea class="form-control" id="message" rows="3"></textarea>
 					</div>
 					<div class="buttonHolder">
-						<button id="submitButton" type="submit" class="btn btn-primary"><span>Submit</span></button>
+						<button id="submitButton" type="submit" class="btn btn-primary clickable" data-toggle="modal" data-target="#submitted"><span>Submit</span></button>
 					</div>
 				</form>
 			</div>
@@ -106,7 +108,7 @@
 	</footer>
 
 
-		<!-- Modal -->
+		<!-- Hours Modal -->
 	<div class="modal fade" id="hoursModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
@@ -127,9 +129,29 @@
 	  </div>
 	</div>
 
+		<!-- submitted Modal -->
+	<div class="modal fade" id="submitted" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel" style="color: green">Message Delivered</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	Thanks for reaching out! <br> We will get back to you soon! 
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
 			
-<!-- JS, jQuery, tether for bootstrap -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- JS, tether for bootstrap -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="./javascript/email.js"></script>

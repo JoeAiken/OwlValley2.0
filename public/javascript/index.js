@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	
 	$('.carousel').carousel();
-	$('#hoursModal').modal(options)
+	$('#hoursModal').trigger("focus");
+	$('#submitted').trigger("focus");
 });
