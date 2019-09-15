@@ -4,6 +4,16 @@ $(document).ready(function() {
 	$('#hoursModal').trigger("focus");
 	$('#submitted').trigger("focus");
 
+	$('#navigation').slimmenu(
+		{
+			resizeWidth: '1000',
+			collapserTitle: '',
+			animSpeed: 'medium',
+			easingEffect: null,
+			indentChildren: false,
+			childrenIndenter: '&nbsp;'
+		});
+
 	  /* Add scroll class toggle */
 	  $(function () {
 		$(document).scroll(function () {

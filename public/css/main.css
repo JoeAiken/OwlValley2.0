@@ -30,6 +30,25 @@ body {
     transition: 1s all ease;
 }
 
+nav ul.slimmenu.collapsed {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 1px);
+    z-index: 999;
+    display: none;
+    width: 100%;
+    min-width: 250px;
+    border-radius: .25em;
+}
+
+nav ul.slimmenu>li {
+    position: relative;
+    display: inline-flex;
+    align-items: stretch;
+    padding-right: 22px;
+    font-size: 15px;
+}
+
 .carouselContent {
 	position: absolute;
 	bottom: 50%;
