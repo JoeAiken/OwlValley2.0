@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <title>Owl Valley Farm</title>
-	<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,185 +24,210 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="/"><img class ="logo" src="./images/owlValleyLogo.jpg"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/about">About<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link clickable" data-toggle="modal" data-target="#hoursModal">Hours</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <header id="header" class="bg-white sticky-top">
+    <div class="container">
+      <div class="row nav-main justify-content-between flex-nowrap">
+        <a class="navbar-brand" href="/"><img class="logo" src="./images/owlValleyLogo.jpg"></a>
+        <nav class="navbar navbar-expand-lg nav-items d-flex align-items-center">
 
-  <div class="container-fluid">
-    <div id="overlay">
-      <h1 id= "mainTitle">QUALITY ADIRONDACK HOPS</h1>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/about">About<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link clickable" data-toggle="modal" data-target="#hoursModal">Hours</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
+  </header>
+
+  <div class="container-fluid px-0">
     <div id="carouselWrap" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block" src="./images/hopsBackground2.jpg" alt="First slide">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselWrap" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselWrap" data-slide-to="1"></li>
+        <li data-target="#carouselWrap" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url(images/hopsBanner3.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(images/hopsBackground2.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(images/duskFarm.jpg)"></div>
       </div>
-      <div class="carousel-item">
-        <img class="d-block" src="./images/hopsBackground.jpg" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block" src="./images/duskFarm.jpg" alt="Third slide">
-      </div>
-    </div>
-  </div>
-  
-
-
-<section id="section1">
-  
-  <div class="row">
-    <div class="col-lg-6">
-      <img id = "hopPic" src="./images/hops.png">
-    </div>
-
-    <div class="col-lg-6">
-      <h3 class="textBox" id = "aboutUs"><strong>Owl Valley Farm</strong> is a family owned hop yard and vegetable farm located in the Adirondacks of Upstate New York.  Awarded Warren County Farm of the Year in 2016 we are a one of a kind operation ranging from our two acre hop yard to our 30x72 ft greenhouse</h3>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-7">
-      <h3 class="textBox" id="bottomText"><strong>Here on our</strong> two acre hop yard we grow both Chinook and Cascade hops. We keep quality top of mind through the whole process of cultivation and harvest. Once harvested we sell our hops to local breweries to be brewed into a variety of tasty pints. </h3>
-    </div>
-
-    <div class="col-lg-5">
-      <img id="award" src="./images/award.JPG">
-    </div>
-  </div>
-
-</section>
-
-<section id = "section2">
-  
-  <h2 id="continueTitle"><strong>We</strong> also have alot more going on at the farm...</h2>
-
-<div class="container-fluid">
-  <div id="carousel2" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="card" style="width: 30rem;">
-        <img class="card-img-top" src="./images/greenhouse.png" alt="greenhouse">
-        <div class="card-body">
-          <h5 class="card-title"><strong>GREEN HOUSE</strong></h5>
-          <p class="card-text">We manufactured our very own green house here at Owl Valley that is 30x72 feet and lets us grow your favorite crops year round!</p>
-        </div>
-      </div>
-      
-    </div>
-    <div class="carousel-item">
-      <div class="card" style="width: 30rem;">
-        <img class="card-img-top" src="./images/cabbage.png" alt="cabbage">
-        <div class="card-body">
-          <h5 class="card-title"><strong>OUR CROPS</strong></h5>
-          <p class="card-text">We offer a variety of your favorite crops including tomatoes, cabbage, cucumbers, onions, carrots and different peppers!</p>
+      <div class="container-fluid text-center py-4 mb-0 carouselContent">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1 class="text-white">Quality Adirondack Hops</h1>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="carousel-item">
-       <div class="card" style="width: 30rem;">
-        <img class="card-img-top" src="./images/goats.png" alt="goats">
-        <div class="card-body">
-          <h5 class="card-title"><strong>Livestock</strong></h5>
-          <p class="card-text">Currently Owl Valley has 60 chickens and 13 Ginnie hens, as well as our LaMancha goat, Twilight! Come by and grab a carton of fresh eggs!</p>
-        </div>
+
+
+  <section id="section1" class="container my-5">
+
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img class="img-fluid mt-4" id="hopPic" src="./images/hops2.jpg">
+      </div>
+
+      <div class="col-md-6">
+        <h3 class="textBox" id="aboutUs"><strong>Owl Valley Farm</strong> is a family owned hop yard and vegetable
+          farm located in the Adirondacks of Upstate New York. Awarded Warren County Farm of the Year in 2016 we are a
+          one of a kind operation ranging from our two acre hop yard to our 30x72 ft greenhouse</h3>
       </div>
     </div>
 
-    
-      <div class="carousel-item">
-        <div class="card" style="width: 30rem;">
-          <img class="card-img-top" src="./images/cassidy.png" alt="cat">
-          <div class="card-body">
-            <h5 class="card-title"><strong>Furry Friends</strong></h5>
-            <p class="card-text">Make sure to be on the look out for our patrol guards found here at Owl Valley Farm. This includes Maeby, our loveable pup, and Cassidy the Tortoiseshell cat!</p>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h3 class="textBox" id="bottomText"><strong>Here on our</strong> two acre hop yard we grow both Chinook and
+          Cascade hops. We keep quality top of mind through the whole process of cultivation and harvest. Once
+          harvested we sell our hops to local breweries to be brewed into a variety of tasty pints. </h3>
+      </div>
+
+      <div class="col-md-6">
+        <img id="award" src="./images/award.JPG">
+      </div>
+    </div>
+
+  </section>
+
+  <section id="section2" class="container-fluid px-0">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-12">
+        <h2 id="continueTitle"><strong>We</strong> also have alot more going on at the farm...</h2>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center">
+        <div id="carousel2" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel2" data-slide-to="1"></li>
+            <li data-target="#carousel2" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card" style="width:500px;">
+                <img class="bottomCarouselImage" src="./images/greenhouse.png" alt="greenhouse">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>GREEN HOUSE</strong></h5>
+                  <p class="card-text">We manufactured our very own green house here at Owl Valley that is 30x72 feet
+                    and lets us grow your favorite crops year round!</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width:500px;">
+                <img class="bottomCarouselImage" src="./images/cabbage.png" alt="cabbage">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>OUR CROPS</strong></h5>
+                  <p class="card-text">We offer a variety of your favorite crops including tomatoes, cabbage, cucumbers,
+                    onions, carrots and different peppers!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card" style="width:500px;">
+                <img class="bottomCarouselImage" src="./images/goats.png" alt="goats">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Livestock</strong></h5>
+                  <p class="card-text">Currently Owl Valley has 60 chickens and 13 Ginnie hens, as well as our LaMancha
+                    goat, Twilight! Come by and grab a carton of fresh eggs!</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="carousel-item">
+              <div class="card" style="width:500px;">
+                <img class="bottomCarouselImage" src="./images/cassidy.png" alt="cat">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Furry Friends</strong></h5>
+                  <p class="card-text">Make sure to be on the look out for our patrol guards found here at Owl Valley
+                    Farm. This includes Maeby, our loveable pup, and Cassidy the Tortoiseshell cat!</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-      </div>    
-
-  </div>
-  <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
-</section>
-
-<footer>
-  <div class="row">
-    <div class="col-lg-4">
-      <h6 id ="owlInfo">
-        Adklem@yahoo.com<br>
-        518-796-6813 <br>
-        192 Ingraham Rd., <br>
-        Pottersville, New York 12860
-      </h6>
-    </div>
-    
-    <div class="col-lg-4">
-      <h4 class="contact"><a href="/contact" style="color: white">CONTACT</a></h4>
-    </div>
-
-    <div class="col-lg-4 social">
-      <a href="https://www.facebook.com/owlvalleyfarm/" target="_blank" class="fa fa-facebook"></a>
-      <a href="https://www.instagram.com/owlvalleyfarm/" target="_blank" class="fa fa-instagram"></a>
-    </div>
-  </div>
-</footer>
-
-
-<!-- Modal -->
-<div class="modal fade" id="hoursModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Owl Valley Hours</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Mon-Fri : 8:00 am - 4:00 pm<br>
-        Sat-Sun : Closed
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- JS, jQuery, tether for bootstrap -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <footer>
+    <div class="row">
+      <div class="col-lg-4">
+        <h6 id="owlInfo">
+          Adklem@yahoo.com<br>
+          518-796-6813 <br>
+          192 Ingraham Rd., <br>
+          Pottersville, New York 12860
+        </h6>
+      </div>
 
-<script type="text/javascript" src = './javascript/index.js'></script>
+      <div class="col-lg-4">
+        <h4 class="contact"><a href="/contact" style="color: white">CONTACT</a></h4>
+      </div>
+
+      <div class="col-lg-4 social">
+        <a href="https://www.facebook.com/owlvalleyfarm/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/owlvalleyfarm/" target="_blank" class="fa fa-instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="hoursModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Owl Valley Hours</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Mon-Fri : 8:00 am - 4:00 pm<br>
+          Sat-Sun : Closed
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- JS, jQuery, tether for bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript" src='./javascript/index.js'></script>
 </body>
+
 </html>
