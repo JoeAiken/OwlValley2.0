@@ -4,15 +4,17 @@ $(document).ready(function() {
 	$('#hoursModal').trigger("focus");
 	$('#submitted').trigger("focus");
 
-	$('#navigation').slimmenu(
-		{
-			resizeWidth: '1000',
-			collapserTitle: '',
-			animSpeed: 'medium',
-			easingEffect: null,
-			indentChildren: false,
-			childrenIndenter: '&nbsp;'
-		});
+	 /* SlimMenu Prep */
+	 $('#navigation').slimmenu({
+		resizeWidth: '800',
+		collapserTitle: '',
+		animSpeed: 0,
+		easingEffect: null,
+		indentChildren: false,
+		childrenIndenter: '&nbsp;',
+		expandIcon: '',
+		collapseIcon: ''
+	  });
 
 	  /* Add scroll class toggle */
 	  $(function () {
