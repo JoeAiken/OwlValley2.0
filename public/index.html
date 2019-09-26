@@ -8,10 +8,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" type="text/css" href="./css/main.css">
-
-   <!--Slimmenu-->
-   <link rel="stylesheet" href="slimmenu.min.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -27,26 +24,26 @@
 
 <body>
 
-  <header id="header" class="bg-white sticky-top">
-    <div class="container">
-      <div class="row nav-main justify-content-between flex-nowrap">
-        <a class="navbar-brand" href="/"><img class="logo" src="./images/owlValleyLogo.jpg"></a>
-        <nav class="navbar navbar-expand-lg nav-items d-flex align-items-center">
-            <ul id="navigation" class="slimmenu normal">
-              <li class="nav-item active">
-                <a class="nav-link" href="/about">About<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link clickable" data-toggle="modal" data-target="#hoursModal">Hours</a>
-              </li>
-            </ul>
-        </nav>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="/"><img class="logo" src="./images/owlValleyLogo.jpg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/about">About<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="clickable nav-link" data-toggle="modal" data-target="#hoursModal">Hours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
   <div class="container-fluid px-0">
     <div id="carouselWrap" class="carousel slide" data-ride="carousel" data-interval="6000">
@@ -222,7 +219,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <script src="jquery.slimmenu.min.js"></script>
     <script type="text/javascript" src='./javascript/index.js'></script>
 </body>
 

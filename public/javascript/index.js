@@ -4,9 +4,8 @@ $(document).ready(function() {
 	$('#hoursModal').trigger("focus");
 	$('#submitted').trigger("focus");
 
-	 /* SlimMenu Prep */
-	 $('#navigation').slimmenu({
-		resizeWidth: '800',
+	$('#navigation').slimmenu({
+		resizeWidth: '980',
 		collapserTitle: '',
 		animSpeed: 0,
 		easingEffect: null,
